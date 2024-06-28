@@ -1,4 +1,4 @@
-package com.example.passdata
+package com.example.retrofit
 
 import org.junit.Test
 
