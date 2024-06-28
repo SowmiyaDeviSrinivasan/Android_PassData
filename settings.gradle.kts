@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PassData"
+rootProject.name = "ImageLoader"
 include(":app")
- 

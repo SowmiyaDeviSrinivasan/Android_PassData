@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.passdata"
+    namespace = "com.example.imageloader"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.passdata"
+        applicationId = "com.example.imageloader"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -26,6 +26,10 @@ android {
             )
         }
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -42,8 +46,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Glide dependencies
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
 }
