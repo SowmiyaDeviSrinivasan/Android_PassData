@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PassData"
+rootProject.name = "MVVMArchi"
 include(":app")
  

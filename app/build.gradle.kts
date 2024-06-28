@@ -4,11 +4,16 @@ plugins {
 }
 
 android {
-    namespace = "com.example.passdata"
+    namespace = "com.example.mvvmarchi"
     compileSdk = 34
 
+        buildFeatures {
+            dataBinding = true
+        }
+
+
     defaultConfig {
-        applicationId = "com.example.passdata"
+        applicationId = "com.example.mvvmarchi"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -26,6 +31,11 @@ android {
             )
         }
     }
+
+    buildFeatures{
+        dataBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -40,9 +50,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
+    implementation("androidx.activity:activity-ktx:1.9.0")
+    implementation ("androidx.databinding:databinding-runtime:8.4.1")
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
