@@ -1,4 +1,4 @@
-package com.example.passdata
+package com.example.mvparch
 
 import org.junit.Test
 
