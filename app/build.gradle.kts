@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.passdata"
+    namespace = "com.example.mvcarch"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.passdata"
+        applicationId = "com.example.mvcarch"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,7 +42,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

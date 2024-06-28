@@ -1,4 +1,4 @@
-package com.example.passdata
+package com.example.mvcarch
 
 import org.junit.Test
 
